@@ -16,7 +16,7 @@
 /* Caption text */
 .text {
     color: #f2f2f2;
-    background-color: rgb(98, 98, 98);
+    background-color: #6c7087;
     font-size: 20px;
     padding: 8px 12px;
     position: absolute;
@@ -53,7 +53,7 @@
 }
 
 .active, .dot:hover {
-    background-color: gray;
+    background-color: #6c7087;
 }
 
 /* Fading animation */

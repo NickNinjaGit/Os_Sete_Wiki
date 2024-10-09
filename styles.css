@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
-    color: rgb(224, 233, 238);
+    color: #e0e0e0;
     font-family: Titillium Web;
 }
 
 body {
-    background: radial-gradient(rgb(102, 12, 12), rgb(0, 0, 0));
-    background-size: 150%;
+    background-image: url("img/teste_bg.png"), radial-gradient(rgba(153, 32, 32, 0.7), rgb(90, 22, 22));
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
+
+
 
 .grid-container
 {
@@ -70,7 +75,8 @@ body {
     transition: 0.3s;
 }
 
-#navbar ul li a:hover {
+
+a:hover {
     color:rgb(227, 58, 58)
 }
 
@@ -92,7 +98,8 @@ body {
     list-style: none;
 }
 .section1 ul li {
-    margin-bottom: .5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .section1 ul li a {
@@ -124,6 +131,8 @@ main {
     height: 400px;
     margin-top: 2.5em;
     margin-left: .5em;
+    border: 1px solid #4e5760;
+    box-shadow: 0px 0px 15px rgb(7, 7, 15);
 }
 #home img {
     width: 400px;
@@ -282,14 +291,14 @@ figure p {
 
 .profile-content th, .profile-content td {
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #4e5760;
     text-align: left;
     vertical-align: top;
 }
 
 .profile-content th {
     width: 40%;
-    background-color: crimson;
+    background-color: #6c7087;
     color: #ffffff;
     font-weight: bold;
 }
@@ -297,7 +306,7 @@ figure p {
 .profile-content td {
     width: 60%;
     font-size: 14px;
-    background-color: rgb(116, 116, 116);
+    background-color: #6c7087;
 }
 
 footer {
@@ -310,7 +319,7 @@ footer {
 }
 
 .section1, main, .section2 {
-    background-color: rgb(52, 52, 55);
+    background-color: #7f8aa3;
 }
 
 /* ACCORDION */
@@ -319,14 +328,13 @@ footer {
     margin-right: 1em;
 }
 .accordion {
-    background-color: #4a4b54;
+    background-color: #6c7087;
     border-radius: 3px;
     padding: 7px;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1em;
-    border: 1px solid;
-    border-color: #3c3d42;     
+    border: 1px solid #6c7087;     
 }
 
 .accordion i {
@@ -349,7 +357,7 @@ footer {
     font-size: 2em;
     font-weight: bold;
     margin-top: .5em;
-    max-width: 100%
+    max-width: 100%;
     text-overflow: ellipsis;
 }
 
@@ -362,6 +370,15 @@ footer {
     overflow: hidden;
     transition: opacity .3s;
     visibility: hidden;
+}
+
+/* Accordion Tittle*/
+.accordion-body h2 {
+    margin-left: 1.2em;
+}
+
+.accordion-body a:hover {
+    transition: 0.3s;
 }
 
 
