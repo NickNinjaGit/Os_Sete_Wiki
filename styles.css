@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
-    color: #e0e0e0;
+    color: white;
     font-family: Titillium Web;
 }
 
@@ -54,6 +54,7 @@ body {
     align-items: center;
     box-shadow: 0px 0px 20px rgb(7, 7, 15);
     background: rgba(80, 20, 20, 0.67);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
@@ -255,6 +256,8 @@ figure p {
     border-radius: 4px;
 }
 
+
+
 .profile-header a {
     cursor: pointer;
 }
@@ -286,19 +289,22 @@ figure p {
 
 .profile-content table {
     width: 100%;
-    border-collapse: collapse;
+    border-spacing: 0em 0.3em;
 }
 
+tr {
+    border: 1px solid #776060;
+}
 .profile-content th, .profile-content td {
     padding: 10px;
-    border: 1px solid #4e5760;
+    border-radius: 2px;
     text-align: left;
     vertical-align: top;
 }
 
 .profile-content th {
     width: 40%;
-    background-color: #6c7087;
+    background-color: #967f7f;
     color: #ffffff;
     font-weight: bold;
 }
@@ -306,7 +312,7 @@ figure p {
 .profile-content td {
     width: 60%;
     font-size: 14px;
-    background-color: #6c7087;
+    background-color: #776060;
 }
 
 footer {
@@ -318,8 +324,9 @@ footer {
     grid-area: 5 / 1 / 6 / 6;
 }
 
+
 .section1, main, .section2 {
-    background-color: #7f8aa3;
+    background-color: rgba(212, 193, 193, 0.688);
 }
 
 /* ACCORDION */
@@ -328,13 +335,13 @@ footer {
     margin-right: 1em;
 }
 .accordion {
-    background-color: #6c7087;
+    background-color: #967f7f;
     border-radius: 3px;
     padding: 7px;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em;
-    border: 1px solid #6c7087;     
+    margin-bottom: 1em;  
+    border: 1px solid #776060;
 }
 
 .accordion i {
