@@ -4,6 +4,22 @@ let slideInterval; // Variável para armazenar o intervalo de slides
 const expandImgLinks = document.querySelectorAll(".expand_img_btn");
 const accordions = document.querySelectorAll(".accordion");
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Verifica se está rodando localmente ou em GitHub Pages
+    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+
+    // Ajusta os links que apontam para "/"
+    const anchors = document.querySelectorAll('a[href="/"]');
+    anchors.forEach(anchor => {
+      if (isLocal) {
+        // Se local, mantém "/" ou redireciona para o diretório local raiz
+        anchor.href = '/';
+      } else {
+        // Se no GitHub Pages, redireciona para "/example"
+        anchor.href = '/Os_Sete_Wiki';
+      }
+    });
+});
 
 function showMobileLinks() {
     const links = document.getElementById("links");
