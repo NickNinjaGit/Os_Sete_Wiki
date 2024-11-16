@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,49 @@
     <link rel="stylesheet" href="../../slide.css">
     <script src="../../script.js" defer></script> 
     <script src="../../slide.js" defer></script> 
-    <link rel="shortcut icon" href="../../img/coffin.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/coffin.png" type="image/x-icon">
     <title>Wiki Os Sete</title>
 </head>
 <body>
     <div class="grid-container">
-        <nav id="navbar">
-            <a href="/" id="logo"><img src="/img/os_sete_logo.png" alt="os_sete_logo"></a>
-            <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="../autor.html">Autor</a></li>
-            <li><a href="main.html">Os Sete</a></li>
-            <li><a href="../setimo/main.html">Sétimo</a></li>
-            <li><a href="../senhor_da_chuva/main.html">Senhor da Chuva</a></li>
-            <li><a href="../filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
-            <li><a href="../revelacoes/main.html">Revelações</a></li>
-            <li><a href="../livro_de_jo/main.html">Livro de Jó</a></li>
-            <li><a href="../bento/main.html">Bento</a></li>
-            <li><a href="../vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
-            </ul>
+        <!-- Mobile Navbar -->
+        <nav id="mobile-navbar">
+            <a href="#top" id="logo"><img src="../../images/os_sete_logo.png" alt="os_sete_logo"></a> 
+            <div id="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../autor.html">Autor</a></li>
+                    <li><a href="main.html">Os Sete</a></li>
+                    <li><a href="../setimo/main.html">Sétimo</a></li>
+                    <li><a href="../senhor_da_chuva/main.html">Senhor da Chuva</a></li>
+                    <li><a href="../filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
+                    <li><a href="../wikis/revelacoes/main.html">Revelações</a></li>
+                    <li><a href="../wikis/livro_de_jo/main.html">Livro de Jó</a></li>
+                    <li><a href="../wikis/bento/main.html">Bento</a></li>
+                    <li><a href="../wikis/vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="showMobileLinks()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
-        <!-- MENU LATERAL -->
+        <!-- Navbar -->
+        <nav id="navbar">
+            <a href="#top" id="logo"><img src="../../images/os_sete_logo.png" alt="os_sete_logo"></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="../autor.html">Autor</a></li>
+                <li><a href="./main.html">Os Sete</a></li>
+                <li><a href="../setimo/main.html">Sétimo</a></li>
+                <li><a href="../senhor_da_chuva/main.html">Senhor da Chuva</a></li>
+                <li><a href="../filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
+                <li><a href="../revelacoes/main.html">Revelações</a></li>
+                <li><a href="../livro_de_jo/main.html">Livro de Jó</a></li>
+                <li><a href="../bento/main.html">Bento</a></li>
+                <li><a href="../vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
+            </ul>
+        </nav>a
+es        <!-- MENU LATERAL -->
         <aside class="section1">
             <div class="accordion aside-accordion">
                 <button class="accordion-header">
@@ -185,12 +207,12 @@
                     <div class="slideshow-container">
                         <div class="mySlides fade">
                             <a href="#" class="expand_img_btn" data-target="img1">
-                                <img src="../../img/tiago.jpeg" alt="Tiago">
+                                <img src="../../images/tiago.jpeg" alt="Tiago">
                             </a>
                             <dialog class="expand_img" id="img1">
                                 <div class="text"><i><strong>Imagem gerada por IA baseado na descrição do personagem</strong></i></div>
                                 <button class="close_img"><i class="fa-solid fa-xmark"></i></button>
-                                <img src="../../img/tiago.jpeg" alt="Tiago">
+                                <img src="../../images/tiago.jpeg" alt="Tiago">
                             </dialog>
                             
                         </div>

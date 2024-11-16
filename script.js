@@ -72,7 +72,7 @@ function showSlides() {
 
     // Remover a classe "active" de todos os pontos
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
+        dots[i].className = dots[i].className.replace(" active", " ");
     }
 
     // Exibir o slide atual e adicionar a classe "active" ao ponto correspondente

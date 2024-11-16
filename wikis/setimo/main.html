@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../../styles.css">
-    <link rel="shortcut icon" href="../../img/coffin.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/coffin.png" type="image/x-icon">
     <script src="../../script.js" defer></script>  
     <title>Wiki Os Sete</title>
 </head>
 <body>
     <div class="grid-container">
+        <nav id="mobile-navbar">
+            <a href="#top" id="logo"><img src="../../images/os_sete_logo.png" alt="os_sete_logo"></a> 
+            <div id="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../../wikis/autor.html">Autor</a></li>
+                    <li><a href="../../wikis/os_sete/main.html">Os Sete</a></li>
+                    <li><a href="../../wikis/setimo/main.html">Sétimo</a></li>
+                    <li><a href="../../wikis/senhor_da_chuva/main.html">Senhor da Chuva</a></li>
+                    <li><a href="../../wikis/filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
+                    <li><a href="../../wikis/revelacoes/main.html">Revelações</a></li>
+                    <li><a href="../../wikis/livro_de_jo/main.html">Livro de Jó</a></li>
+                    <li><a href="../../wikis/bento/main.html">Bento</a></li>
+                    <li><a href="../../wikis/vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="showMobileLinks()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
         <nav id="navbar">
-            <a href="/" id="logo"><img src="/img/os_sete_logo.png" alt="os_sete_logo"></a>
+            <a href="/" id="logo"><img src="../../images/os_sete_logo.png" alt="os_sete_logo"></a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/wikis/autor.html">Autor</a></li>
-                <li><a href="/wikis/os_sete/main.html">Os Sete</a></li>
-                <li><a href="/wikis/setimo/main.html">Sétimo</a></li>
-                <li><a href="/wikis/senhor_da_chuva/main.html">Senhor da Chuva</a></li>
-                <li><a href="/wikis/filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
-                <li><a href="/wikis/revelacoes/main.html">Revelações</a></li>
-                <li><a href="/wikis/livro_de_jo/main.html">Livro de Jó</a></li>
-                <li><a href="/wikis/bento/main.html">Bento</a></li>
-                <li><a href="/wikis/vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
+                <li><a href="../../wikis/autor.html">Autor</a></li>
+                <li><a href="../../wikis/os_sete/main.html">Os Sete</a></li>
+                <li><a href="../../wikis/setimo/main.html">Sétimo</a></li>
+                <li><a href="../../wikis/senhor_da_chuva/main.html">Senhor da Chuva</a></li>
+                <li><a href="../../wikis/filhos_de_setimo/main.html">Filhos de Sétimo</a></li>
+                <li><a href="../../wikis/revelacoes/main.html">Revelações</a></li>
+                <li><a href="../../wikis/livro_de_jo/main.html">Livro de Jó</a></li>
+                <li><a href="../../wikis/bento/main.html">Bento</a></li>
+                <li><a href="../../wikis/vampiros_rio_douro/main.html">Vampiros do Rio D´ouro</a></li>
             </ul>
         </nav>
 
@@ -36,14 +56,14 @@
                     </button>
                     <div class="accordion-body">
                             <ul>
-                                <li><a href="/wikis/os_sete/inverno.html">Inverno</a></li>
-                                <li><a href="/wikis/os_sete/acordador.html">Acordador</a></li>
-                                <li><a href="/wikis/os_sete/gentil.html">Gentil</a></li>
-                                <li><a href="/wikis/os_sete/espelho.html">Espelho</a></li>
-                                <li><a href="/wikis/os_sete/tempestade.html">Tempestade</a></li>
-                                <li><a href="/wikis/os_sete/tiago.html">Tiago</a></li>
-                                <li><a href="/wikis/os_sete/cesar.html">César</a></li>
-                                <li><a href="/wikis/os_sete/eliana.html">Eliana</a></li>
+                                <li><a href="../../wikis/os_sete/inverno.html">Inverno</a></li>
+                                <li><a href="../../wikis/os_sete/acordador.html">Acordador</a></li>
+                                <li><a href="../../wikis/os_sete/gentil.html">Gentil</a></li>
+                                <li><a href="../../wikis/os_sete/espelho.html">Espelho</a></li>
+                                <li><a href="../../wikis/os_sete/tempestade.html">Tempestade</a></li>
+                                <li><a href="../../wikis/os_sete/tiago.html">Tiago</a></li>
+                                <li><a href="../../wikis/os_sete/cesar.html">César</a></li>
+                                <li><a href="../../wikis/os_sete/eliana.html">Eliana</a></li>
                             </ul>
                     </div>
                 </div>
@@ -55,7 +75,7 @@
                     </button>
                     <div class="accordion-body">
                         <ul>
-                            <li><a href="/">Sétimo</a></li>
+                            <li><a href="">Sétimo</a></li>
                             <li><a href="/">Lobo</a></li>
                             <li><a href="/">Tobia</a></li>
                             <li><a href="/">Dimitri</a></li>
@@ -159,9 +179,9 @@
 
         <!-- CONTEÚDO -->
         <main id="home">
-            <img src="/img/setimo_01.jpg" id="wiki-thumb" alt="setimo_01">
-            <img src="/img/setimo_02.jpg" id="wiki-thumb" alt="setimo_02">
-            <img src="/img/setimo_03.png" id="wiki-thumb" alt="setimo_03">
+            <img src="../../images/setimo_01.jpg" id="wiki-thumb" alt="setimo_01">
+            <img src="../../images/setimo_02.jpg" id="wiki-thumb" alt="setimo_02">
+            <img src="../../images/setimo_03.png" id="wiki-thumb" alt="setimo_03">
             <h1>Sétimo</h1>
         <figure>
             <div class="accordion">
@@ -310,23 +330,23 @@
                     <blockquote>
                         <div id="char-img">
                             <ul>
-                                <li><a href="setimo.html"><img class="char-img" src="/img/setimo_transformado.jpeg" alt="setimo"></a>
+                                <li><a href="setimo.html"><img class="char-img" src="../../images/setimo_transformado.jpeg" alt="setimo"></a>
                                     <p>Sétimo</p>
                                 </li>
                                 <li>
-                                    <a href="lobo.html"><img class="char-img" src="/img/lobo.jpeg" alt="lobo"></a>
+                                    <a href="lobo.html"><img class="char-img" src="../../images/lobo.jpeg" alt="lobo"></a>
                                     <p>Lobo</p>
                                 </li>
-                                <li><a href="tobia.html"><img class="char-img" src="/img/tobia_setimo.jpeg" alt="tobia_jovem"></a>
+                                <li><a href="tobia.html"><img class="char-img" src="../../images/tobia_setimo.jpeg" alt="tobia_jovem"></a>
                                     <p>Tobia</p>
                                 </li>
-                                <li><a href="dimitri.html"><img class="char-img" src="/img/dimitri_2.jpeg" alt="Dimitri"></a>
+                                <li><a href="dimitri.html"><img class="char-img" src="../../images/dimitri_2.jpeg" alt="Dimitri"></a>
                                     <p>Dimitri</p>
                                 </li>
-                                <li><a href="alexia.html"><img class="char-img" src="/img/alexia.jpeg" alt="alexia"></a>
+                                <li><a href="alexia.html"><img class="char-img" src="../../images/alexia.jpeg" alt="alexia"></a>
                                     <p>Aléxia</p>
                                 </li>
-                                <li><a href="leonardo.html"><img class="char-img" src="/img/leonardo_2.jpeg" alt="leonardo"></a>
+                                <li><a href="leonardo.html"><img class="char-img" src="../../images/leonardo_2.jpeg" alt="leonardo"></a>
                                     <p>Leonardo</p>
                                 </li>
                             </ul>
