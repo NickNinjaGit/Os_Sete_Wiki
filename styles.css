@@ -710,7 +710,7 @@ footer {
         margin-left: 5%;
     }
     #home h1 {
-        margin: 0;
+        margin-bottom: 0.5em;
         font-size: 20px;
     }
     #home h2 {
@@ -723,14 +723,28 @@ footer {
         height: auto;
     }
 
+    #home #wiki-thumb {
+        width: 150px;
+        height: 200px;
+        margin-top: 2.5em;
+        margin-left: .5em;
+        border: 1px solid #4e5760;
+        box-shadow: 0px 0px 15px rgb(7, 7, 15);
+    }
+
     #home figure h2 {
         text-align: left;
-        font-size: 36px;
+        font-size: 24px;
+    }
+
+    .accordion {
+        max-height: 300px;
+        overflow-y: auto;
     }
     
     #home figure blockquote {
-        text-align: left;
-        font-size: 16px;
+        text-align: justify;
+        font-size: 20px;
     }
     #home table {
         display: flex;
@@ -753,6 +767,18 @@ footer {
         object-fit: cover;
     }
 
+    #char-img ul {
+        margin: 0;
+        padding: 0;
+    }
+    #char-img ul li {
+        font-size: 14px;
+    }
+    #char-img img {
+        width: 100px;
+        margin: 0;
+        height: auto;
+    }
     .accordion-header span {
         font-size: 1.5em;
         font-weight: bold;
@@ -840,17 +866,24 @@ footer {
     color: white;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    /* Exibe o menu ao clicar no botão */
-    .show {
-        display: block;
-    }
+.show {
+    display: block;
+}
+footer {
+    margin-top: 50%;
 }
 
-     footer {
-        margin-top: 50%;
-    }
+.section2 {
+    width: 50%;
+    height: auto;
+}
+
+.section2 img {
+    width: 75%;
+    height: auto;
+}
+
+
 }
 
 
