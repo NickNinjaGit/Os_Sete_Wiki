@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../slide.css">
     <link rel="shortcut icon" href="../images/coffin.png" type="image/x-icon">
     <script src="../script.js" defer></script>  
     <title>Autor</title>
@@ -12,7 +13,7 @@
 <body>
     <div class="grid-container">
         <nav id="mobile-navbar">
-            <a href="#top" id="logo"><img src="../images/os_sete_logo.png" alt="os_sete_logo"></a> 
+            <a href="/" id="logo"><img src="../images/os_sete_logo.png" alt="os_sete_logo"></a> 
             <div id="links">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -175,6 +176,10 @@
                 </div>
             </div>
     </aside>
+    <div class="switch">
+        <a href="javascript:void(0);" class="switch" >Conteúdo</a>
+        <a href="javascript:void(0);" class="switch" >Info</a>
+    </div>
         <main>
             <figure>
                 <p><b>André Ferreira da Silva</b> conhecido por seu pseudônimo <b>André Vianco</b>, é um romancista, roteirista e diretor de cinema
@@ -318,18 +323,51 @@
                 
             </figure>
         </main>
-        <section class="section2">
+        <section class="section2"> 
             <div class="profile-container">
                 <div class="profile-header">
-                    <h2>André Vianco</h2>
+                          
+                    <h2>André Ferreira da Silva <br> (André Vianco)</h2>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div> 
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 2</div>
                             <a href="#" class="expand_img_btn" data-target="img1">
-                                <img src="../images/andre_vianco.jpeg" alt="andre_vianco">
+                                <img src="../../images/andre_vianco.jpeg" alt="André Vianco">
                             </a>
                             <dialog class="expand_img" id="img1">
                                 <button class="close_img"><i class="fa-solid fa-xmark"></i></button>
-                                <img src="../images/andre_vianco.jpeg" alt="andre_vianco">
-                                <div class="text"><i></i></div>
+                                <img src="../../images/andre_vianco.jpeg" alt="André Vianco">
+                                <div class="text"><i><strong></strong></i></div>
                             </dialog>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext" style="color: black;">2 / 2</div>
+                            <a href="#" class="expand_img_btn" data-target="img2">
+                                <img src="../../images/andre_vianco_2.jpg" alt="acordador_2">
+                            </a>
+                            <dialog class="expand_img" id="img2">
+                                <button class="close_img">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <img src="../../images/andre_vianco_2.jpg" alt="">
+                                <div class="text"><i><strong>Uma foto minha com o André em uma sessão de autógrafos</strong></i></div>
+                            </dialog>
+                            
+                        </div>
+                    </div>
+                    <!-- Full-width images with number and caption text -->
+                    <!-- The dots/circles -->
+                    
+                <strong><i>(Clique na imagem para expandir)</i></strong>
+                </div>
                 <div class="profile-content">
                     <table>
                         <tr>
@@ -376,6 +414,7 @@
                     </table>
                 </div>
             </div>
+            
         </section>
         <footer>Os Sete Wiki &copy; 2024</footer>
     </div>
