@@ -8,8 +8,7 @@
 body {
     background-image: url("images/teste_bg.png"), radial-gradient(rgba(153, 32, 32, 0.7), rgb(90, 22, 22));
     background-blend-mode: multiply;
-    background-color: rgba(153, 32, 32, 0.7);
-    background-blend-mode: multiply;;
+    background-color: rgb(90, 22, 22);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -750,11 +749,6 @@ footer {
         font-size: 14px;
     }
 
-    .accordion {
-        max-height: 300px;
-        overflow-y: auto;
-    }
-
     .accordion-header {
         padding-left: 20px;
         width: 100%;
@@ -998,6 +992,10 @@ footer {
         text-align: center;
     }
 
+    #home figure blockquote {
+        margin: 0;
+    }
+
     #home strong {
         display: block;
         font-size: 16px;
@@ -1021,10 +1019,6 @@ footer {
         font-size: 24px;
     }
 
-    .accordion {
-        max-height: 300px;
-        overflow-y: auto;
-    }
     
     #home figure blockquote {
         text-align: left;
