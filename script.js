@@ -3,10 +3,28 @@ let isExpanding = false;
 let slideInterval; // Variável para armazenar o intervalo de slides
 const expandImgLinks = document.querySelectorAll(".expand_img_btn");
 const accordions = document.querySelectorAll(".accordion");
+const sectionContent = document.querySelector(".section2");
+const mainContent = document.querySelector("main");
+const switches = document.querySelectorAll(".switch a");
+
+  switches.forEach((anchor, index) => {
+    anchor.addEventListener("click", () => {
+      if (index === 0) {
+        // Exibir conteúdo de "main"
+        mainContent.style.display = "block";
+        sectionContent.style.display = "none";
+      } else {
+        // Exibir conteúdo de "section2"
+        mainContent.style.display = "none";
+        sectionContent.style.display = "block";
+      }
+    });
+  });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // Verifica se está rodando localmente ou em GitHub Pages
-    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'https://nickninjagit.github.io/Os_Sete_Wiki/';
 
     // Ajusta os links que apontam para "/"
     const anchors = document.querySelectorAll('a[href="/"]');
@@ -20,7 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 });
-
+function switchContent() {
+    section2 = getElementsByClassName("section2");
+    section2.classList.add(" active-content");
+}
 function showMobileLinks() {
     const links = document.getElementById("links");
     if(links.style.display === "block") {
@@ -39,10 +60,15 @@ accordions.forEach((accordion) => {
     });
 });
 
-// Função de expandir imagem
 expandImgLinks.forEach((expandImgLink) => {
-    // Adiciona evento de clique à âncora de expandir
     expandImgLink.addEventListener("click", (event) => {
+        // Condição para desativar a âncora de clique
+        if (window.innerWidth < 768) {
+            startSlideShow();
+            return; // Sai da função, desativando o clique
+        }
+
+        // Continua com o comportamento normal em telas maiores
         isExpanding = true; // Indica que a imagem está sendo expandida
         event.preventDefault(); // Evita que a âncora navegue para outro lugar
 
@@ -61,6 +87,7 @@ expandImgLinks.forEach((expandImgLink) => {
         });
     });
 });
+
 
 // Inicia o slideshow e configura a rolagem automática
 function startSlideShow() {

@@ -489,7 +489,7 @@ footer {
     display: none;
 }
 /* Responsive for Notebooks */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     #logo img {
         width: 100px;
         height: auto;
@@ -670,35 +670,57 @@ footer {
         color: rgb(227, 58, 58);
         width: 50px;
         cursor: pointer;
-}
-        
+    }
     .profile-header .expand_img dialog {
-    width: 100%;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    }
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        }
+        
+        .profile-content table {
+            width: 100%;
+            border-spacing: 0em 0.3em;
+        }
     
-    .profile-content table {
-        width: 100%;
-        border-spacing: 0em 0.3em;
-    }
-
-    .text {
-        color: #f2f2f2;
-        background-color: #6c7087;
-        font-size: 14px;
-        padding: 4px 0px;
-        position: absolute;
-        bottom: 150px;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 5px;
-        z-index: -1;
-    }
-
+        .text {
+            color: #f2f2f2;
+            background-color: #6c7087;
+            font-size: 14px;
+            padding: 4px 0px;
+            position: absolute;
+            bottom: 150px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 5px;
+            z-index: -1;
+        }
 }
+
+        
+    
+
+
+
+/* Responsive for Horizontal Mobile */
+@media screen and (max-width: 1000px) and (orientation: landscape)
+{
+    #logo img {
+        width: 100px;
+        height: auto;
+    }
+    #navbar {
+        padding: 0.5em 0.5em;
+    }
+    #navbar ul {
+        display: flex;
+        flex: 6; /* Adiciona flexibilidade aos links para que eles fiquem no centro */
+        font-size: 0.7em;    
+    }
+}
+
+
 
 /* Responsive for Vertical Mobile */
 @media screen and (max-width: 768px) {
@@ -711,6 +733,11 @@ footer {
     main {
         width: 90%;
         margin-left: 5%;
+        padding-bottom: 1em;
+    }
+    figure p {
+        padding-bottom: 0.5em;
+        padding-top: 1em;
     }
     #home {
         width: 90vw;
@@ -750,8 +777,8 @@ footer {
     }
     
     #home figure blockquote {
-        text-align: justify;
-        font-size: 20px;
+        text-align: left;
+        font-size: 16px;
     }
     #home table {
         display: flex;
@@ -811,6 +838,7 @@ footer {
     #navbar {
         display: none;
     }
+
    /* Estilo do container da navbar */
 #mobile-navbar {
     position: sticky;
@@ -898,22 +926,29 @@ footer {
 }
 .switch a {
     
-    padding: 0 60px;
+    padding: 0 10vw;
     text-decoration: none;
     cursor: pointer;
 }
-.active { 
+.active-content { 
     display: block;
 }
 
 
 
-.profile-container {
-    margin-left: 5%;
-}
+    .profile-container {
+        margin-left: 15%;   
+    }
+
+
+
+    .profile-header strong i {
+        display: none;
+    }
 
 
 
 }
+
 
 
