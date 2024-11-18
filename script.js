@@ -9,13 +9,16 @@ const switches = document.querySelectorAll(".switch button");
 
   switches.forEach((anchor, index) => {
     anchor.addEventListener("click", () => {
+     
       if (index === 0) {
-        window.onresize = fixElements;
-        fixElements();
+         window.onresize = fixElements;
+          fixElements();
         // Exibir conteúdo de "main"
         mainContent.style.display = "block";
         sectionContent.style.display = "none";
       } else {
+         window.onresize = fixElements;
+        fixElements();
         // Exibir conteúdo de "section2"
         mainContent.style.display = "none";
         sectionContent.style.display = "block";
