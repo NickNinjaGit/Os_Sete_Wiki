@@ -6,7 +6,8 @@
 }
 
 body {
-    background-image: url("images/teste_bg.png"), radial-gradient(rgba(153, 32, 32, 0.7), rgb(90, 22, 22));
+    background-image: url("images/teste_bg.png");
+    background-color: rgb(90, 22, 22);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
