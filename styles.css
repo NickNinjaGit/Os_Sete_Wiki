@@ -814,14 +814,14 @@ footer {
     #home table tr th p {
         display: flex;
         justify-content: center;
-        margin-left: 45px;
+        margin-left: 0px;
         font-size: 16px;
     }
     #home table td img {
         display: flex;
         justify-content: center;
-        margin-left: 45px;
-        width: 150px;
+        margin-left: 10px;
+        width: 100px;
         height: auto;
     }
 
