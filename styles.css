@@ -8,7 +8,6 @@
 body {
     background-image: url("images/teste_bg.png"), radial-gradient(rgba(153, 32, 32, 0.7), rgb(90, 22, 22));
     background-blend-mode: multiply;
-    background-color: rgb(90, 22, 22);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -768,8 +767,16 @@ footer {
         text-overflow: ellipsis;
     }
 
+    .section1 {
+        padding: 0;
+        margin-left: 4em;
+    }
     .section1 ul li a {
-        font-size: 16px;
+        font-size: 12px;
+    }
+
+    #home figure blockquote {
+        margin: 0;
     }
 
     /* Aside Accordion */
@@ -896,8 +903,9 @@ footer {
         
     .expand_img button {
         display: flex;
-        top: -1.5vh;
-        font-size: 24px; /* Ajuste o tamanho da fonte do ícone */
+        top: 0%;
+        left: -3vh;
+        font-size: 16px; /* Ajuste o tamanho da fonte do ícone */
         position: relative;
         margin-left: -5px;
         background-color: transparent;
@@ -921,9 +929,9 @@ footer {
 
     
     
-        .text {
-            color: #f2f2f2;
-            background-color: #6c7087;
+    .text {
+        color: #f2f2f2;
+        background-color: #6c7087;
             font-size: 12px;
             padding: 10px 0px;
             position: absolute;
@@ -931,7 +939,7 @@ footer {
             width: 100%;
             text-align: center;
             position: absolute;
-            top: -5px;
+            top: -10px;
             z-index: -1;
         }
 
@@ -1168,7 +1176,9 @@ footer {
     font-size: 1.2em;
     
 }
-    .switch a {
+    .switch button {
+        background-color: transparent;
+        border: none;
         padding: 0 10vw;
         text-decoration: none;
         cursor: pointer;

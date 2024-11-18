@@ -5,11 +5,13 @@ const expandImgLinks = document.querySelectorAll(".expand_img_btn");
 const accordions = document.querySelectorAll(".accordion");
 const sectionContent = document.querySelector(".section2");
 const mainContent = document.querySelector("main");
-const switches = document.querySelectorAll(".switch a");
+const switches = document.querySelectorAll(".switch button");
 
   switches.forEach((anchor, index) => {
     anchor.addEventListener("click", () => {
       if (index === 0) {
+        window.onresize = fixElements;
+        fixElements();
         // Exibir conteúdo de "main"
         mainContent.style.display = "block";
         sectionContent.style.display = "none";
@@ -20,6 +22,23 @@ const switches = document.querySelectorAll(".switch a");
       }
     });
   });
+
+    function fixElements() {
+        console.log(window.innerWidth); // Verificar largura da janela
+    if (window.innerWidth <= 768) {
+        // Exibe o conteúdo principal e esconde o secundário para telas pequenas
+        mainContent.style.display = "block";
+        sectionContent.style.display = "none";
+    } else if (window.innerWidth > 768 && window.innerWidth <= 1000) {
+        // Para telas intermediárias
+        mainContent.style.display = "block";
+        sectionContent.style.display = "block";
+    } else {
+        // Para telas grandes
+        mainContent.style.display = "block";
+        sectionContent.style.display = "block";
+    }
+    }
 
 
 document.addEventListener('DOMContentLoaded', () => {
