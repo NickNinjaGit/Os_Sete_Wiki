@@ -8,6 +8,7 @@ public class OsSeteApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OsSeteApplication.class, args);
+
 	}
 
 }
