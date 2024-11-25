@@ -2,6 +2,7 @@ Essa API implementa um sistema de autenticação, registro, e comentários em um
 
 Modelo conceitual
 
-![project-schema](https://github.com/user-attachments/assets/478b2837-fefc-4fb9-85cf-bcf1087e69cf)
+![structure-diagram](https://github.com/user-attachments/assets/2e91e259-606f-4765-95f3-05d822b8f649)
+
 
 **Tecnologias: ** Spring Boot, Java 17, PostgreSQL
