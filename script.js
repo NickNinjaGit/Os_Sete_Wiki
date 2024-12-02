@@ -9,13 +9,16 @@ const switches = document.querySelectorAll(".switch button");
 
   switches.forEach((anchor, index) => {
     anchor.addEventListener("click", () => {
+     
       if (index === 0) {
-        window.onresize = fixElements;
-        fixElements();
+         window.onresize = fixElements;
+          fixElements();
         // Exibir conteúdo de "main"
         mainContent.style.display = "block";
         sectionContent.style.display = "none";
       } else {
+         window.onresize = fixElements;
+        fixElements();
         // Exibir conteúdo de "section2"
         mainContent.style.display = "none";
         sectionContent.style.display = "block";
@@ -82,7 +85,10 @@ accordions.forEach((accordion) => {
 expandImgLinks.forEach((expandImgLink) => {
     expandImgLink.addEventListener("click", (event) => {
         // Condição para desativar a âncora de clique
+// Relaciona o link ao modal correto usando um seletor
+const expandImg = document.getElementById(expandImgLink.dataset.target);
         if (window.innerWidth < 768) {
+            expandImg.close();
             startSlideShow();
             return; // Sai da função, desativando o clique
         }
@@ -91,8 +97,7 @@ expandImgLinks.forEach((expandImgLink) => {
         isExpanding = true; // Indica que a imagem está sendo expandida
         event.preventDefault(); // Evita que a âncora navegue para outro lugar
 
-        // Relaciona o link ao modal correto usando um seletor
-        const expandImg = document.getElementById(expandImgLink.dataset.target);
+        
         expandImg.showModal(); // Abre o modal correspondente
 
         // Seleciona o botão de fechar específico dentro do modal
