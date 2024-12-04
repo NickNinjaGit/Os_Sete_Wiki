@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("/images/teste_bg.png");
+  background-image: url("./images/teste_bg.png");
   background-color: rgb(148, 54, 54);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
