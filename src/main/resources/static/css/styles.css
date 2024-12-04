@@ -65,7 +65,7 @@ body {
     flex: 6; /* Adiciona flexibilidade aos links para que eles fiquem no centro */
     padding: 0;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 #navbar ul li {
@@ -75,6 +75,15 @@ body {
 #navbar ul li a {
     text-decoration: none;
     transition: 0.3s;
+}
+
+
+.login-container a {
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.3s;
+    margin-left: 2em;
+    margin-right: 1em;
 }
 
 
@@ -494,8 +503,171 @@ footer {
 .switch {
     display: none;
 }
+
+.button-form {
+    width: 1004px;
+    display: flex;
+    justify-content: end;
+}
+
+#commentForm {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+}
+#comment {
+    color: black;
+    width: 796px;
+    height: 150px;
+    margin-bottom: 1.5em;
+    border-radius: 3px;
+    resize: none;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+#comments-list {
+    margin-top: 1.5em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #967f7f;
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;  
+    border: 1px solid #776060;
+    transition: 1s;
+}
+
+#botao:hover {
+    background-color: #796565;
+}
+
+
+
+#comments-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -4%;
+    background-color: #776060;
+    padding: 5px;
+    padding-left: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+#comment-content {
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #af8484;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0;
+    margin-left: -4%;
+    padding-left: 4%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 2em;
+}
 /* Responsive for Notebooks */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1650px) {
+    
+    .button-form {
+        width: 700px;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: end;
+    }    
+
+    #comment {
+        color: black;
+        width: 500px;
+        height: 100px;
+        margin-bottom: 1.5em;
+        border-radius: 3px;
+        resize: none;
+        font-size: 1.2em;
+        border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        
+    }
+    #botao {
+        margin-left: 53%;
+        display: flex;
+        align-items: center;
+        width: 150px;
+        justify-content: center;
+        height: 50px;
+        background-color: #967f7f;
+        border-radius: 3px;
+        padding: 7px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1em;  
+        border: 1px solid #776060;
+        transition: 1s;
+    }
+    #comments-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #comment-title {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -4%;
+        background-color: #776060;
+        padding: 5px;
+        padding-left: 0.5em;
+        border-radius: 3px;
+        border: 1px solid #000;
+    }
+    
+    #comment-content {
+        font-size: 18px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #af8484;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 0;
+        margin-left: -4%;
+        padding-left: 4%;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-bottom: 2em;
+    }
     #logo img {
         width: 100px;
         height: auto;
@@ -508,6 +680,11 @@ footer {
         flex: 6; /* Adiciona flexibilidade aos links para que eles fiquem no centro */
         font-size: 1.1em;    
     }
+    .login-container a {
+        font-size: 0.9em;
+        margin-left: 1.2em;
+        margin-right: 1.5em;
+    }
 
     /* Margin of Useful links <ul> */
     .section1 ul li {
@@ -518,7 +695,6 @@ footer {
 
 
     .section1 ul li a {
-        font-size: 20px;
         text-decoration: none;
         transition: 0.5s;
     }
@@ -703,22 +879,78 @@ footer {
             z-index: -1;
         }
 }
-
-        
-    
-
-
-
 /* Responsive for Horizontal Mobile */
-@media screen and (max-width: 1000px) and (orientation: landscape)
+@media screen and (min-width: 769px) and (max-width: 1439px)
 {
     figure blockquote{
         font-size: 0.7em;
         margin-bottom: 1em;
     }
 
-    
+    .button-form {
+        width: 400px;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: end;
+    }    
 
+    #comment {
+        color: black;
+        width: 250px;
+        height: 100px;
+        margin-bottom: 1.5em;
+        border-radius: 3px;
+        resize: none;
+        font-size: 1.2em;
+        border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #botao {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        background-color: #967f7f;
+        border-radius: 3px;
+        padding: 7px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1em;  
+        border: 1px solid #776060;
+        transition: 1s;
+    }
+
+    #comment-title {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -4%;
+        background-color: #776060;
+        padding: 5px;
+        padding-left: 0.5em;
+        border-radius: 3px;
+        border: 1px solid #000;
+    }
+    
+    #comment-content {
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #af8484;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 0;
+        margin-left: -4%;
+        padding-left: 4%;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-bottom: 2em;
+    }
     #logo img {
         width: 75px;
         height: auto;
@@ -730,6 +962,12 @@ footer {
         display: flex;
         flex: 6; /* Adiciona flexibilidade aos links para que eles fiquem no centro */
         font-size: 0.7em;    
+    }
+    .login-container a {
+        text-decoration: none;
+        font-size: 0.7em;
+        transition: 0.3s;
+        margin-left: 0.5em;
     }
 
     #home img {
@@ -967,10 +1205,79 @@ footer {
 
 }
 
-
-
 /* Responsive for Vertical Mobile */
 @media screen and (max-width: 768px) {
+
+    #comment {
+        color: black;
+        width: 250px;
+        height: 150px;
+        margin-bottom: 1.5em;
+        border-radius: 3px;
+        resize: none;
+        font-size: 1.2em;
+        border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+    .button-form {
+        width: 350px;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        background-color: #967f7f;
+        border-radius: 3px;
+        padding: 7px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1em;  
+        border: 1px solid #776060;
+        transition: 1s;
+    }
+
+
+    #comments-list {
+        padding: 1em;
+    }
+
+    #comment-title {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -4%;
+        background-color: #776060;
+        padding: 5px;
+        padding-left: 0.5em;
+        border-radius: 3px;
+        border: 1px solid #000;
+    }
+    
+    #comment-content {
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #af8484;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 0;
+        margin-left: -4%;
+        padding-left: 4%;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-bottom: 2em;
+    }
+
     .grid-container {
         display: block;
     }
