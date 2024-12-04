@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("./images/teste_bg.png");
+    background-image: url("/Os_Sete_Wiki/images/teste_bg.png");
     background-color: rgb(90, 22, 22);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
