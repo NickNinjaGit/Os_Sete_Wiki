@@ -1,13 +1,21 @@
 server:
+  port: 8080 # Define a porta explicitamente
   error:
     include-message: always
     include-binding-errors: always
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/registration
-    username: postgres
-    password: linuxx007
+    url: jdbc:postgresql://dpg-ct952fl6l47c73amvqkg-a.oregon-postgres.render.com/registration_tiq6
+    username: registration_tiq6_user
+    password: XvxTBe0sTmhibJZ8GcYrR0GwLhrJp0oE
+
+  web:
+    cors:
+    allowed-origins: "http://localhost:8080, https://os-sete-demo-latest.onrender.com"
+    allowed-methods: "GET, POST, PUT, DELETE, OPTIONS"
+    allowed-headers: "*"
+    allow-credentials: true
 
   jpa:
     hibernate:
@@ -17,3 +25,17 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER # Valor corrigido para a configuração correta
+
+logging:
+  level:
+    org.springframework.web: DEBUG # Logs detalhados do Spring MVC
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Expor todos os endpoints do Actuator para depuração

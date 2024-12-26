@@ -46,7 +46,11 @@
 			            <li><a href="/wikis/vampirosRioDouro">Vampiros do Rio D´ouro</a></li>
 			        </ul>
 
-			
+					<div class="login-container">
+					    <a href="/login">Login</a>
+					    <a href="/req/signup">Crie uma Conta</a>
+					</div>
+
 			        </nav>
 
         <!-- MENU LATERAL -->
@@ -428,7 +432,7 @@
 		async function loadComments(bookUrl) {
 		    try {
 		        // Endpoint dinâmico com o bookUrl
-		        const endpoint = `http://localhost:8080/wikis/${bookUrl}/comments`;
+const endpoint = `https://os-sete-demo-latest.onrender.com/wikis/${bookUrl}/comments`;
 
 		        // Fazendo a requisição ao backend
 		        const response = await fetch(endpoint);

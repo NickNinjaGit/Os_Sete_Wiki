@@ -58,7 +58,7 @@ public class SecurityConfig {
     
             
             .authorizeHttpRequests(registry ->{
-            	registry.requestMatchers("/wikis/bento/comment","/req/signup", "/css/**", "/js/**", "/images/**").permitAll();
+            	registry.requestMatchers("/**","/wikis/bento/comment","/req/signup", "/css/**", "/js/**", "/images/**").permitAll();
             	registry.anyRequest().authenticated();
                 
             })

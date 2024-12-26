@@ -15,7 +15,9 @@
             <a href="/" id="logo"><img src="../../images/os_sete_logo.png" alt="os_sete_logo"></a> 
             <div id="links">
                 <ul>
-                    <li><a href="/">Home</a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/register">Crie uma Conta</a></li>
+					<li><a href="/login">Login</a></li>
                     <li><a href="../../wikis/autor.html">Autor</a></li>
                     <li><a href="../../wikis/os_sete/main.html">Os Sete</a></li>
                     <li><a href="../../wikis/setimo/main.html">Sétimo</a></li>
@@ -47,7 +49,10 @@
 			            <li><a href="/wikis/bento">Bento</a></li>
 			            <li><a href="/wikis/vampirosRioDouro">Vampiros do Rio D´ouro</a></li>
 			        </ul>
-					
+					<div class="login-container">
+					    <a href="/login">Login</a>
+					    <a href="/req/signup">Crie uma Conta</a>
+					</div>
 			           </nav>
 
         <!-- MENU LATERAL -->
@@ -228,13 +233,15 @@
 
 
 			<form id="commentForm">
-			    <input name="comment" id="comment" type="text" required>
-			    <button type="submit" id="botao">Post Comment</button>
+			    <div class="comment-container">
+			        <textarea name="comment" id="comment" required></textarea>
+			        <div class="button-form"><button type="submit" id="botao">Post Comment</button></div>
+			    </div>
 			</form>
 
-			     <ul id="comments-list">
-					
-				 </ul>
+			<ul id="comments-list">
+			    
+			</ul>
 
             
         </figure>
@@ -285,7 +292,7 @@
 		async function loadComments(bookUrl) {
 		    try {
 		        // Endpoint dinâmico com o bookUrl
-		        const endpoint = `http://localhost:8080/wikis/${bookUrl}/comments`;
+const endpoint = `https://os-sete-demo-latest.onrender.com/wikis/${bookUrl}/comments`;
 
 		        // Fazendo a requisição ao backend
 		        const response = await fetch(endpoint);

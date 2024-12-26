@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Titillium Web;
 }
 
 body {
@@ -12,7 +12,9 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
+  background-image: url("/images/teste_bg.png");
+  background-color: rgb(148, 54, 54);
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,7 +22,8 @@ body {
 
 section {
     position: relative;
-    max-width: 500px; /* Adjust the max-width as needed */
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 400px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
