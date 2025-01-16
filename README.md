@@ -2,7 +2,7 @@
 
 https://os-sete-demo-latest.onrender.com
 
-Essa API implementa um sistema de autenticação, registro e comentários em um front-end de um site para um projeto escolar meu e do @NickNinjaGit, apresentado na EXPO TCC DS da Etec Carapicuíba
+Essa API implementa um sistema de autenticação, registro e comentários em um front-end de um site para um projeto escolar meu e do @NickNinjaGit, apresentada no setor dos primeiros anos do médio da EXPO TCC DS da Etec Carapicuíba
 
 # **Modelo conceitual**
 
